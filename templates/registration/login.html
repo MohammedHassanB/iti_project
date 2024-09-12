@@ -1,0 +1,10 @@
+{% extends 'layout/base.html' %} {% load static %} {% block main %}
+<div>
+  <form method="post">
+    {% csrf_token %} {{form}}
+
+    <input type="submit" class="btn btn-dark" value="Login" />
+  </form>
+</div>
+<script src="{% static 'admins/js/script.js' %}"></script>
+{% endblock %}

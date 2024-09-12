@@ -1,0 +1,11 @@
+{% extends 'layout/base.html' %} {% load static %} {% block main %}
+<h1>Register</h1>
+<div>
+  <form method="post">
+    {% csrf_token %} {{form}}
+
+    <input type="submit" class="btn btn-dark" value="Register" />
+  </form>
+</div>
+<script src="{% static 'admins/js/script.js' %}"></script>
+{% endblock %}
